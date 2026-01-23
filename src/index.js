@@ -10,6 +10,13 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.json({ message: "API is running" });
 });
+app.get("/version", (req, res) => {
+  res.json({
+    version: "1.1",
+    updatedAt: "2026-01-18"
+  });
+});
+
 
 app.use("/api/items", itemsRouter);
 
