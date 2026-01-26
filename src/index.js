@@ -15,7 +15,7 @@ app.get("/version", (req, res) => {
     version: "1.1",
     updatedAt: "2026-01-18"
   });
-});
+});  
 
 
 app.use("/api/items", itemsRouter);
